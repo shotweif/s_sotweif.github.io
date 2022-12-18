@@ -332,6 +332,7 @@ a{
 .social-name-page{
     text-decoration: none;
     margin-left: 2rem;
+    font-size: 1rem;
 }
 .social-name-page h2{
     text-decoration: none;
@@ -358,7 +359,7 @@ a{
 .gen-container-social::before{
     content: "";
     position: absolute;
-    width: 60.1vh;
+    width: 60vh;
     height: 100%;
     border-radius: 5rem;
     background-color: #000000b4;
@@ -402,11 +403,35 @@ a{
         width: 90%;
     }
 }
-@media screen and (max-width:414px){
-    /*main{
-        height: 110vh;
-    }*/
+@media screen and (max-width:600px){
+    .block-social{
+        width: 35vh;
+    }
     .main-mind{
         width: 80%;
     }
+    .gen-container-social{
+        width: 35vh;
+        height: 3rem;
+    }
+    .gen-container-social::before{
+        width: 35vh;
+    }
+}
+@media screen and (max-width:500px){
+    .block-social{
+        width: 25vh;
+    }
+    .gen-container-social{
+        width: 25vh;
+        height: 3rem;
+    }
+    .social-name-page{
+        margin-left: 0rem;
+        font-size: .6rem;
+    }
+    .gen-container-social::before{
+        width: 25vh;
+    }
+    
 }
